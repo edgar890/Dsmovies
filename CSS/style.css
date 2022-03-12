@@ -6,6 +6,7 @@
     --color-primary: #4D41C0;
     --white: #fff;
     --text-dark-gray: darkgray;
+    --yellow-star: #FFBB3A;
 }
 *{
     margin: 0;
@@ -84,7 +85,7 @@ a , a:hover{
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovies-card-description h3{
@@ -93,6 +94,32 @@ a , a:hover{
     margin-bottom: 25px;
     text-align: center;
 }
+
+.dsmovies-card-description-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovies-card-description-bottom h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--yellow-star);
+}
+
+.dsmovies-card-description-bottom img{
+    width: 22px;
+}
+
+.dsmovies-card-description-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-dark-gray);
+    margin-bottom: 10px;
+}
+
+
+
 
 .dsmovies-btn, .dsmovies-btn:hover{
     width: 180px;
@@ -151,6 +178,9 @@ a , a:hover{
     align-items: center;
     justify-content: space-between;
 }
+
+
+
 
 
 
