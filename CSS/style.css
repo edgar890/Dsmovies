@@ -61,7 +61,7 @@ a , a:hover{
 }
 
 #dsmovies-card-list{
-    padding: 40px 10px;
+    padding: 0 10px;
 
 }
 
@@ -179,8 +179,48 @@ a , a:hover{
     justify-content: space-between;
 }
 
+.dsmovies-pagination-container{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
 
+.dsmovies-pagination-box{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.dsmovies-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 400;
+}
 
+.dsmovies-pagination-box button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.dsmovies-pagination-box button img{
+    filter: brightness(0) saturate(100%) invert(24%) sepia(13%) saturate(7088%) hue-rotate(224deg) brightness(113%) contrast(100%);
+}
 
+.dsmovies-pagination-box button:disabled{
+    border: 1px solid var(--text-dark-gray);
+}
+
+.dsmovies-pagination-box button:disabled img{
+    filter: unset;
+}
+
+.dsmovies-flip-horizontal{
+    transform: rotate(180deg);
+}
